@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">TaskManagement</string>
+    <string name="text_btn_login">LOGIN</string>
+    <string name="text_btn_register">Novo por aqui? Cadastre-se</string>
+    <string name="text_btn_next">Próximo</string>
+    <string name="text_senha">Senha</string>
+    <string name="text_email">Email</string>
+    <string name="text_nome">Nome</string>
+    <string name="end_date">Data de conclusão</string>
+    <string name="select_date">SELECIONE</string>
+    <string name="start_date">Data de Início</string>
+    <string name="in_progress">Em andamento</string>
+    <string name="completed">Concluída</string>
+    <string name="name_task">Nome da tarefa</string>
+    <string name="priority">Prioridade:</string>
+    <string name="high">Alta</string>
+    <string name="low">Baixa</string>
+    <string name="average">Média</string>
+    <string name="status_da_tarefa">Status da tarefa:</string>
+    <string name="date_conclusion">Data de Conclusão</string>
+    <string name="save">Salvar</string>
+    <string name="end_date_text">Data de conclusão:</string>
+    <string name="start_date_text">Data de início</string>
+    <string name="name_task_text">Tarefa:</string>
+    <string name="priority_text">Prioridade:</string>
+    <string name="progress_task_text">Status da tarefa:</string>
+	<string name="text_email_empty">Preencha com seu email</string>
+    <string name="text_passwd_empty">Preencha com sua senha</string>
+    <string name="text_connected">Conectado novamente</string>
+    <string name="text_not_connected">Conecte-se com a internet</string>
+	<string name="text_error_passwd">Qual vai ser a senha?</string>
+    <string name="text_error_email">Qual é seu email?</string>
+    <string name="text_error_name">Qual é seu nome</string>
+    <string name="error_nothing_user">Nenhum usuário encontrado</string>
+    <string name="title_register_task">Cadastrar Tarefa</string>
+	<string name="text_error_save">Desculpe, falha ao tentar salvar!</string>
+    <string name="text_task">Qual o nome da tarefa?</string>
+    <string name="text_select_priority">Selecione a prioridade</string>
+
+    <string name="ok">ok</string>
+    <string name="cancel">Cancelar</string>
+    <string name="text_select">Selecione o status</string>
+    <string name="text_btn_not">NÃO</string>
+    <string name="text_btn_yes">SIM</string>
+
+    <string-array name="statusTarefa">
+        <item>Selecione</item>
+        <item>A fazer</item>
+        <item>Pendente</item>
+        <item>Em andamento</item>
+        <item>Concluída</item>
+    </string-array>
+
+</resources>
