@@ -10,7 +10,6 @@ import tom.dev.com.taskmanagement.network.models.User
 class LoginModel {
 
     private val subscriptions = CompositeDisposable()
-//    private val api: ApiServiceInterface = ApiServiceInterface.create()
 
     fun execute( api: ApiServiceInterface, user: User, response: ContractResponse<BaseResponse>) {
         val subscribe = api.loginUser(user)

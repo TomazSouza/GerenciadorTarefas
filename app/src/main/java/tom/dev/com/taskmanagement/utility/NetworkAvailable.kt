@@ -12,7 +12,7 @@ object NetworkAvailable {
             val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager?
 
             if (connectivityManager!!.activeNetworkInfo != null &&
-                connectivityManager.activeNetworkInfo.isConnected
+                connectivityManager.activeNetworkInfo!!.isConnected
             ) {
                 return true
             }

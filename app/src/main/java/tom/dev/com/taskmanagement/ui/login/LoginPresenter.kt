@@ -12,21 +12,9 @@ class LoginPresenter : LoginContract.Presenter {
     private val subscriptions = CompositeDisposable()
     private val api: ApiServiceInterface = ApiServiceInterface.create()
     private lateinit var view: LoginContract.View
-//    private lateinit var mLoginModel: LoginModel
 
     override fun signInUser(user: User) {
-//        mLoginModel = LoginModel()
-//        mLoginModel.execute(api, user, object : ContractResponse<BaseResponse> {
-//            override fun onSuccess(respose: BaseResponse) {
-//                view.showProgress(false)
-//                view.failureSignInUser(respose.message!!)
-//            }
-//
-//            override fun onFailure(throwable: Throwable) {
-//                view.showProgress(false)
-//                view.failureSignInUser(throwable.message!!)
-//            }
-//        })
+
         val subscribe = api.loginUser(user)
             ?.subscribeOn(Schedulers.io())
             ?.observeOn(AndroidSchedulers.mainThread())

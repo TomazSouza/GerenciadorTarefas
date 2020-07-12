@@ -28,7 +28,7 @@ class DatePickerFragment @SuppressLint("ValidFragment") constructor(
         val day = calendar.get(Calendar.DAY_OF_MONTH)
 
         return DatePickerDialog(
-            activity, this,
+            activity!!, this,
             year,
             month,
             day

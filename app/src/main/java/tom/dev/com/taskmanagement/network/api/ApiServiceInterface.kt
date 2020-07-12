@@ -5,6 +5,7 @@ import io.reactivex.Observable
 import retrofit2.Retrofit
 import retrofit2.converter.jackson.JacksonConverterFactory
 import retrofit2.http.*
+import tom.dev.com.taskmanagement.BuildConfig
 import tom.dev.com.taskmanagement.network.models.BaseResponse
 import tom.dev.com.taskmanagement.network.models.Tasks
 import tom.dev.com.taskmanagement.network.models.User
@@ -35,7 +36,7 @@ interface ApiServiceInterface {
         fun create(): ApiServiceInterface {
 
             val mRetrofit = Retrofit.Builder()
-                .baseUrl(TaskConstants.BASE_URL)
+                .baseUrl(BuildConfig.BASE_URL)
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(JacksonConverterFactory.create())
                 .build()
