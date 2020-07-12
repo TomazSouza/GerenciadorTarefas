@@ -17,9 +17,9 @@ android {
         versionCode 1
         versionName "1.0"
 
-        buildConfigField("String", "BASE_URL", "\"http://192.168.0.11:3000\"")
+        buildConfigField("String", "BASE_URL", "\"http://127.0.0.1:3000\"")
 
-        multiDexEnabled true
+        multiDexEnabled false
         vectorDrawables.useSupportLibrary = true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
