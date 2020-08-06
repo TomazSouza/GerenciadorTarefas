@@ -42,6 +42,7 @@
     <string name="text_select">Selecione o status</string>
     <string name="text_btn_not">NÃO</string>
     <string name="text_btn_yes">SIM</string>
+    <string name="nothing_task">Nenhuma tarefa cadastrada</string>
 
     <string-array name="statusTarefa">
         <item>Selecione</item>

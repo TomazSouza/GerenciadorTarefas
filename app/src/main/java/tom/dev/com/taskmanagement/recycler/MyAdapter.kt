@@ -20,11 +20,11 @@ class MyAdapter(onClickListener: OnClickListenerTask) : RecyclerView.Adapter<Vie
     }
 
     override fun getItemCount(): Int {
-        return if (tasks.size > 0) tasks.size else  mNothinTask.size
+        return if (tasks.isNotEmpty()) tasks.size else  mNothinTask.size
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        if (tasks.size > 0 && tasks.isNotEmpty()) {
+        if (tasks.isNotEmpty()) {
             showWidgets(holder)
             holder.mTextTaskName.text = tasks[position].task
             holder.mTextPriority.text = tasks[position].priority
